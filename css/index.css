@@ -15,57 +15,106 @@ a {
 ul {
     list-style: none;
   }
-h1{
-  color : white;
-  font-size : 70px;
-  padding-top:100px;
-  padding-left:830px;
+  .container{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1950px;
+    grid-template-rows: 90px;
+    grid-template-areas:'header';
 }
-h2{
-  color : white;
-  font-size : 60px;
-  top:400px;
+.header{
+  background-color : white;
+  grid-area: header;
+}
+#logo{ 
+  float:left;   /* 왼쪽으로 플로팅 */ 
+  width:350px;   /*  너비 */ 
+  height:50px;   /* 높이 */
+  line-height:20px;  /* 세로로 중간에 맞춤 - 줄간격을 높이 값과 같게 */
+  padding-left:40px;  /* 왼쪽에 여백 */
+}
+#logo h2 {
+  padding-top:30px;
+  font-weight:700px;
+  font-size:30px;   /* 글자 크기 */
+  color:black;   /* 글자 색*/
+  text-shadow:0 -1px 0 rgb(7, 7, 7);  /* 그림자 색 */
+}
+
+nav{  
+  float:left;   /* 오른쪽으로 플로팅 */
+  width:1200px;   /*   너비 */  
+  height:25px;   /* 메뉴 영역 높이 */  
+  padding-bottom:50px;  /* 메뉴를 아래로 내리기 위해 */  
+}
+#topMenu {  
+  height:50px; 
+}
+#topMenu > li {
+  float:left;  /* 메뉴 항목을 왼쪽으로 플로팅 */ 
+  position: relative;  
+  bottom : 37px;
+  left: 20px;
+}
+#topMenu > li > a{
+  display:block;  /* 링크 텍스트는 블록으로 */ 
+  font-size:20px;
+  color:black;  /* 글자 색 */
+  font-weight:600;  /* 글자 굵기 */
+  padding:40px 60px;  /* 패딩 */ 
+  transition: all 0.5s; /*버튼 바뀌는 딜레이*/
+}
+#topMenu > li > a:hover {
+  color:white;
+  text-shadow:0 -2px #222;
+  background-color:black;
+}
+img{
+  position:absolute;
+  top:80px;
+}
+.btn{
+  top: 550px;
   left:400px;
-  position: absolute;
-  font-weight:700px;
+  font-size: 60px;
+  padding: 100px 100px;
+  background-color: white;
+  color: black;
+  border: 3px solid black;
+  border-radius: 100%; /*버튼 원 둥글게 해주기*/
+  text-transform:uppercase;/*글자 내부에 있는거 대문자로*/
+  letter-spacing:4px; /*글자 내부 간격*/
+  font-family : sans-serif; /*글 꼴 바꾸기*/
+  transition: all 0.4s; /*버튼 바뀌는 딜레이*/
+  position:absolute;
 }
-h3{
-  color : white;
-  font-size : 60px;
-  top:400px;
+.btn2{
+  top: 550px;
+  left:900px;
+  font-size: 60px;
+  padding: 100px 100px;
+  background-color: white;
+  color: black;
+  border: 3px solid black;
+  border-radius: 100%; /*버튼 원 둥글게 해주기*/
+  text-transform:uppercase;/*글자 내부에 있는거 대문자로*/
+  letter-spacing:4px; /*글자 내부 간격*/
+  font-family : sans-serif; /*글 꼴 바꾸기*/
+  transition: all 0.4s; /*버튼 바뀌는 딜레이*/
+  position:absolute;
+}
+.btn3{
+  top: 550px;
   left:1400px;
-  position: absolute;
-  font-weight:700px;
-
-}
-h4{
-  color : white;
-  font-size : 60px;
-  left:950px;
-  top:800px;
-  position: absolute;
-  font-weight:700px;
-  
-}
-
-h2:hover{
-  color:yellow;
-  transition: all 0.8s; /*버튼 바뀌는 딜레이*/
-}
-h2:active{
-  color:yellow;
-}
-h3:hover{
-  color:yellow;
-  transition: all 0.8s; /*버튼 바뀌는 딜레이*/
-}
-h3:active{
-  color:yellow;
-}
-h4:hover{
-  color:yellow;
-  transition: all 0.8s; /*버튼 바뀌는 딜레이*/
-}
-h4:active{
-  color:yellow;
+  font-size: 60px;
+  padding: 100px 100px;
+  background-color: white;
+  color: black;
+  border: 3px solid black;
+  border-radius: 100%; /*버튼 원 둥글게 해주기*/
+  text-transform:uppercase;/*글자 내부에 있는거 대문자로*/
+  letter-spacing:4px; /*글자 내부 간격*/
+  font-family : sans-serif; /*글 꼴 바꾸기*/
+  transition: all 0.4s; /*버튼 바뀌는 딜레이*/
+  position:absolute;
 }
