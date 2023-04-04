@@ -45,7 +45,7 @@ nav{
   float:left;   /* 오른쪽으로 플로팅 */
   width:1200px;   /*   너비 */  
   height:25px;   /* 메뉴 영역 높이 */  
-  padding-bottom:50px;  /* 메뉴를 아래로 내리기 위해 */  
+  padding-bottom:20px;  /* 메뉴를 아래로 내리기 위해 */  
 }
 #topMenu {  
   height:50px; 
@@ -58,10 +58,10 @@ nav{
 }
 #topMenu > li > a{
   display:block;  /* 링크 텍스트는 블록으로 */ 
-  font-size:20px;
+  font-size:22px;
   color:black;  /* 글자 색 */
   font-weight:600;  /* 글자 굵기 */
-  padding:40px 60px;  /* 패딩 */ 
+  padding:60px 100px;  /* 패딩 */ 
   transition: all 0.5s; /*버튼 바뀌는 딜레이*/
 }
 #topMenu > li > a:hover {
@@ -75,13 +75,13 @@ img{
 }
 .btn{
   top: 550px;
-  left:400px;
+  left:200px;
   font-size: 60px;
-  padding: 100px 100px;
+  padding: 120px 180px;
   background-color: white;
   color: black;
   border: 3px solid black;
-  border-radius: 100%; /*버튼 원 둥글게 해주기*/
+  border-radius: 5px; /*버튼 원 둥글게 해주기*/
   text-transform:uppercase;/*글자 내부에 있는거 대문자로*/
   letter-spacing:4px; /*글자 내부 간격*/
   font-family : sans-serif; /*글 꼴 바꾸기*/
@@ -90,13 +90,13 @@ img{
 }
 .btn2{
   top: 550px;
-  left:900px;
+  left:800px;
   font-size: 60px;
-  padding: 100px 100px;
+  padding: 120px 180px;
   background-color: white;
   color: black;
   border: 3px solid black;
-  border-radius: 100%; /*버튼 원 둥글게 해주기*/
+  border-radius: 5px; /*버튼 원 둥글게 해주기*/
   text-transform:uppercase;/*글자 내부에 있는거 대문자로*/
   letter-spacing:4px; /*글자 내부 간격*/
   font-family : sans-serif; /*글 꼴 바꾸기*/
@@ -107,11 +107,11 @@ img{
   top: 550px;
   left:1400px;
   font-size: 60px;
-  padding: 100px 100px;
+  padding: 120px 180px;
   background-color: white;
   color: black;
   border: 3px solid black;
-  border-radius: 100%; /*버튼 원 둥글게 해주기*/
+  border-radius: 5px; /*버튼 원 둥글게 해주기*/
   text-transform:uppercase;/*글자 내부에 있는거 대문자로*/
   letter-spacing:4px; /*글자 내부 간격*/
   font-family : sans-serif; /*글 꼴 바꾸기*/

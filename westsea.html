@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>서해 섬</title>
+    <style>
+        /* 메뉴 버튼 스타일 */
+        .menu-btn {
+            background-color: lightgray;
+            color: #fff;
+            padding: 10px;
+            cursor: pointer;
+            text-decoration:none;
+        }
+        /* 메뉴 목록 스타일 */
+        .menu-list {
+            display: none;
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+        /* 메뉴 목록 아이템 스타일 */
+        .menu-item {
+            padding: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <link rel="stylesheet" href="css/westsea.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div id="logo">
+                <a href="index.html"><h2>한국 섬의 물고기</h2></a>
+            </div>
+            <nav>
+                <ul id="topMenu">
+                    
+                </ul>
+            </nav>
+        </div>
+        <div class="tpicture">tpicture</div>
+        <div class="middle">
+            <!-- 메뉴 버튼 -->
+            <div class="menu-btn" onclick="showMenu()">menu</div>
+            <!-- 메뉴 목록 -->
+            <div class="menu-list" id="menuList">
+                <a href="#"><div class="menu-item">menu1</div></a>
+                <a href="#"><div class="menu-item">menu2</div></a>
+                <a href="#"><div class="menu-item">menu3</div></a>
+            </div>
+        </div>
+        <div class="lpicture">lpicture</div>
+        <div class="main">main</div>
+        <div class="blank"></div>
+    </div>
+    <script>
+        // 메뉴 목록 보이기/숨기기 함수
+        function showMenu() {
+            var menuList = document.getElementById("menuList");
+            if (menuList.style.display === "none") {
+                menuList.style.display = "block";
+            } else {
+                menuList.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
