@@ -15,16 +15,92 @@ a {
 ul {
     list-style: none;
   }
-  .container{
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1950px;
-    grid-template-rows: 90px;
-    grid-template-areas:'header';
+.index-container{
+  background-color:white(181, 181, 252);
+  display:grid;
+  grid-template-columns:100%;
+  grid-template-rows: 8vh 62vh 30vh;
+  grid-template-areas:'header'
+                      'slide-img'
+                      'direction-sea';
 }
 .header{
-  background-color : white;
-  grid-area: header;
+  grid-area:header;
+  background:white;
+ 
+}
+.slide-img{
+  grid-area:slide-img;
+}
+.slide-item{
+  width:100%;
+  margin:auto;
+  position:relative;
+}
+.text-box{
+  position:absolute;
+  width:100%;
+  height:30%;
+  color:white;
+  z-index:5;
+  opacity: 1;
+  overflow:hidden;
+  padding:40px;
+  margin:auto;
+  box-sizing:border-box;
+}
+
+.direction-sea{
+  grid-area:direction-sea;
+}
+.sea-box{
+  width:100%;
+  display:flex;
+  align-content:center;
+  text-align:center;
+  justify-content:center;
+  margin:auto;
+  box-sizing:border-box;
+}
+.sea-item{
+  width:70%;
+  height:200px;
+  border-radius:10px;
+  overflow:hidden;
+  margin:auto;
+  cursor:pointer;
+  position:relative;
+}
+.sea-item img{
+  width:100%;
+  height:100%;
+  display:block
+}
+.overlay-wrap{
+  position:absolute;
+  width:100%;
+  height:100%;
+}
+.overlay-wrap:hover .overlay{
+  opacity:1;
+  height:50%;
+}
+.overlay{
+  position:absolute;
+  width:100%;
+  height:0%;
+  bottom:0px;
+  overflow:hidden;
+  color:white;
+  padding:10px;
+  margin-left:auto;
+  margin-bottom:auto;
+  line-height:5px;
+  box-sizing:border-box;
+  background:rgba(0,0,0,0.5);
+  opacity: 0;
+  transition:all 1s;
+  /* transition-timing-function:cubic-bezier(cubic-bezier(0.075, 0.82, 0.165, 1)) */
 }
 #logo{ 
   float:left;   /* 왼쪽으로 플로팅 */ 
@@ -33,88 +109,9 @@ ul {
   line-height:20px;  /* 세로로 중간에 맞춤 - 줄간격을 높이 값과 같게 */
   padding-left:40px;  /* 왼쪽에 여백 */
 }
-#logo h2 {
-  padding-top:30px;
+#logo h1 {
   font-weight:700px;
   font-size:30px;   /* 글자 크기 */
   color:black;   /* 글자 색*/
   text-shadow:0 -1px 0 rgb(7, 7, 7);  /* 그림자 색 */
-}
-
-nav{  
-  float:left;   /* 오른쪽으로 플로팅 */
-  width:1200px;   /*   너비 */  
-  height:25px;   /* 메뉴 영역 높이 */  
-  padding-bottom:20px;  /* 메뉴를 아래로 내리기 위해 */  
-}
-#topMenu {  
-  height:50px; 
-}
-#topMenu > li {
-  float:left;  /* 메뉴 항목을 왼쪽으로 플로팅 */ 
-  position: relative;  
-  bottom : 37px;
-  left: 20px;
-}
-#topMenu > li > a{
-  display:block;  /* 링크 텍스트는 블록으로 */ 
-  font-size:22px;
-  color:black;  /* 글자 색 */
-  font-weight:600;  /* 글자 굵기 */
-  padding:60px 100px;  /* 패딩 */ 
-  transition: all 0.5s; /*버튼 바뀌는 딜레이*/
-}
-#topMenu > li > a:hover {
-  color:white;
-  text-shadow:0 -2px #222;
-  background-color:black;
-}
-img{
-  position:absolute;
-  top:80px;
-}
-.btn{
-  top: 550px;
-  left:200px;
-  font-size: 60px;
-  padding: 120px 180px;
-  background-color: white;
-  color: black;
-  border: 3px solid black;
-  border-radius: 5px; /*버튼 원 둥글게 해주기*/
-  text-transform:uppercase;/*글자 내부에 있는거 대문자로*/
-  letter-spacing:4px; /*글자 내부 간격*/
-  font-family : sans-serif; /*글 꼴 바꾸기*/
-  transition: all 0.4s; /*버튼 바뀌는 딜레이*/
-  position:absolute;
-}
-.btn2{
-  top: 550px;
-  left:800px;
-  font-size: 60px;
-  padding: 120px 180px;
-  background-color: white;
-  color: black;
-  border: 3px solid black;
-  border-radius: 5px; /*버튼 원 둥글게 해주기*/
-  text-transform:uppercase;/*글자 내부에 있는거 대문자로*/
-  letter-spacing:4px; /*글자 내부 간격*/
-  font-family : sans-serif; /*글 꼴 바꾸기*/
-  transition: all 0.4s; /*버튼 바뀌는 딜레이*/
-  position:absolute;
-}
-.btn3{
-  top: 550px;
-  left:1400px;
-  font-size: 60px;
-  padding: 120px 180px;
-  background-color: white;
-  color: black;
-  border: 3px solid black;
-  border-radius: 5px; /*버튼 원 둥글게 해주기*/
-  text-transform:uppercase;/*글자 내부에 있는거 대문자로*/
-  letter-spacing:4px; /*글자 내부 간격*/
-  font-family : sans-serif; /*글 꼴 바꾸기*/
-  transition: all 0.4s; /*버튼 바뀌는 딜레이*/
-  position:absolute;
 }

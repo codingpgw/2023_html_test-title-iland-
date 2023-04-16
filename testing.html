@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>사진 자동 변경</title>
+    <script>
+        // 이미지 파일 경로를 배열에 저장
+        var images = ["index.jpg", "index2.jpg", "index3.jpg"];
+        // 현재 보여지는 이미지의 인덱스
+        var currentIndex = 0;
+        // 이미지 변경 함수
+        function changeImage() {
+            // 이미지 태그 선택
+            var img = document.getElementById("img");
+            // 현재 인덱스에 해당하는 이미지 파일 경로 설정
+            img.src = images[currentIndex];
+            // 다음 이미지 인덱스로 변경
+            currentIndex++;
+            // 인덱스가 배열의 길이를 넘어가면 처음으로 돌아감
+            if (currentIndex >= images.length) {
+                currentIndex = 0;
+            }
+        }
+        // 일정 시간마다 이미지 변경 함수 호출
+        setInterval(changeImage, 3000);
+    </script>
+</head>
+
+<body>
+    <!-- 이미지 태그 -->
+    <img id="img" src="img/index.jpg">
+</body>
+
+</html>
