@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-seif;
+    margin: 0;
+}
+* {
+    margin:0;   /* 마진 리셋 */
+    padding:0;   /* 패딩 리셋 */
+    box-sizing: border-box;   /* 박스 영역은 테두리까지 */ 
+}
+a {
+    text-decoration:none;  /* 텍스트 링크 밑줄 없애기 */ 
+}
+ul {
+    list-style: none;
+}
+h1{
+    font-size:36px;
+}
+.container{
+    width:80%;
+    text-align:center;
+    margin:50px auto;
+}
+.fi-box, .fo-box, .t-box, .s-box, .f-box {
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px lightgray;
+    margin: 20px auto;
+    align-items: center;
+    line-height: 25px;
+    border-radius: 10px;
+  }
+  .f-box {
+    border-left: solid 2px lightskyblue;
+  }
+  
+  .s-box {
+    border-left: solid 2px greenyellow;
+  }
+  
+  .t-box {
+    border-left: solid 2px blue;
+  }
+  
+  .fo-box {
+    border-left: solid 2px yellow;
+  }
+  .fi-box{
+    border-left: solid 2px lightsalmon;
+  }

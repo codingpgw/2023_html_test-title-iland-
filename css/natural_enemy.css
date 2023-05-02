@@ -8,27 +8,22 @@ body {
     margin:0;   /* 마진 리셋 */
     padding:0;   /* 패딩 리셋 */
     box-sizing: border-box;   /* 박스 영역은 테두리까지 */ 
-  }
+}
 a {
     text-decoration:none;  /* 텍스트 링크 밑줄 없애기 */ 
-  }
+}
 ul {
     list-style: none;
-  }
-  .sea-container{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 8vh 32vh 60vh;
-    grid-template-areas:'header'
-                        'sea-img'
-                        'main-text';
 }
-.header{
-    grid-area:header;
+.container{
+    width:70%;
+    box-sizing:border-box;
+    text-align:center;
+    margin: 50px auto;
 }
-.sea-img{
-    grid-area:sea-img;
+h1{
+    font-size:36px;
 }
-.main-text{
-    grid-area:main-text;
+img{
+    width:80%;
 }
