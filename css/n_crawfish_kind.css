@@ -28,6 +28,9 @@ h2{
     font-size:33px;
     margin-top:20px;
 }
+p{
+    font-size: 15px;
+}
 .grid-container_{
     display:grid;
     grid-template-columns:80%;
@@ -39,11 +42,21 @@ h2{
 }
 .img-box{
     grid-area:img-box;
-    margin:20px auto;
+    margin:50px auto;
 }
 .main-box{
     grid-area:main-box;
+    color:white;
+}
+.main-box p{
+    font-size:20px;
 }
 .explain-box{
     grid-area:explain-box;
+    width:80%;
+    margin:auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px lightgray;
+    background-color: white;
+    padding:10px;
 }

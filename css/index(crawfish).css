@@ -19,9 +19,9 @@ ul {
     width:60%;
     box-sizing:border-box;
     border-radius:20px;
-    margin:100px auto;
+    margin:10px auto;
     position:relative;
-    padding:20px;
+    padding:10px;
     color:white;
     text-align:center;
 }
@@ -46,4 +46,48 @@ ul {
 }
 .btn1:focus{
     outline : none /*버튼에 올라갔을 때 테두리 삭제*/
+}
+.craw{
+    transition: all 3s;
+  }
+.craw:hover{
+    animation-name:move;
+    animation-duration:5s;
+    animation-iteration-count: 2;
+}
+  
+@keyframes move{
+    0%{
+      transform:translateX(100px);
+    }
+    10%{
+      transform:translateX(300px);
+    }
+    20%{
+       transform:translateX(600px) rotateY(180deg);
+    }
+    30%{
+        transform:translateX(300px) rotateY(180deg);
+    }
+    40%{
+        transform:translateX(100px) rotateY(180deg);
+    }
+    50%{
+        transform:translateX(-100px) rotateY(180deg);
+    }
+    60%{
+        transform:translateX(-300px) rotateY(180deg);
+    }
+    70%{
+        transform:translateX(-600px);
+    }
+    80%{
+        transform:translateX(-300px);
+    }
+    90%{
+        transform:translateX(-100px);
+    }
+    100%{
+        transform:translateX(0px);
+    }
 }

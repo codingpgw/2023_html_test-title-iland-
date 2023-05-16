@@ -15,22 +15,21 @@ a {
 ul {
     list-style: none;
   }
-  h1{
+h1{
     font-size:36px;
-  }
-  .container{
-    text-align:center;
-    margin:50px auto;
-  }
-  .row{
-    background-color:white;
-    box-sizing:border-box;
-  }
-  #crawfish-inform{
-    position:relative;
-    z-index:5;
-    display:none;
-  }
+}
+.container{
+  text-align:center;
+  margin:50px auto;
+}
+.row{
+  box-sizing:border-box;
+}
+#crawfish-inform{
+  position:relative;
+  z-index:5;
+  display:none;
+}
 .btn__close {
   position:relative;
   border:none;
@@ -43,3 +42,63 @@ ul {
   content: "\00d7"; 
   font-size:70px;
 }
+.fi-box,.fo-box, .t-box, .s-box, .f-box {
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 5px 5px 5px 5px lightgray;
+  margin: 10px auto;
+  align-items: center;
+  line-height:25px;
+  border-radius: 10px;
+}
+.fo-box p, .t-box p, .s-box p, .f-box p, .fo-box h4, .t-box h4, .s-box h4, .f-box h4 .fi-box p, .fi-box h4{
+  position: relative;
+  top: 20px;
+}
+.fo-box i, .t-box i, .s-box i, .f-box i {
+  float: right;
+  position: relative;
+  bottom: 30px;
+}
+
+.f-box {
+  border-left: solid 2px lightskyblue;
+}
+
+.s-box {
+  border-left: solid 2px greenyellow;
+}
+
+.t-box {
+  border-left: solid 2px blue;
+}
+
+.fo-box {
+  border-left: solid 2px yellow;
+}
+.fi-box{
+  border-left: solid 2px rgb(236, 45, 211);
+}
+.black-bg {
+  width : 100%;
+  height : 100%;
+  position : fixed;
+  background : rgba(0,0,0,0.5);
+  z-index : 6;
+  padding: 30px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s;
+}
+.show-modal{
+  visibility: visible;
+  opacity:1;
+}
+.white-bg {
+  margin:auto;
+  width:70%;
+  background: white;
+  border-radius: 5px;
+  padding: 30px;
+} 
